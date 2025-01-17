@@ -1,4 +1,4 @@
-package ui;
+package ui.menu;
 
 import javax.swing.*;
 import java.awt.*;
@@ -33,7 +33,7 @@ public class MenuPanel extends JPanel {
         adminModeButton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                super.mouseClicked(e);
+                callback.openAdminMode();
             }
         });
 

@@ -3,7 +3,7 @@ package data;
 public enum Data {
 
     ICON("resources/images/gameIcon.png"),
-    FONT("resources/fonts/Montserrat-Bold.ttf");
+    FONT("main/java/resources/fonts/Montserrat-Bold.ttf");
 
     private final String path;
 
