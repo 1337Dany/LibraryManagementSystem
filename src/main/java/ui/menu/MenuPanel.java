@@ -6,7 +6,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class MenuPanel extends JPanel {
-    private MenuPanelCallback callback;
+    private final MenuPanelCallback callback;
 
     private final JButton adminModeButton = new JButton("admin mode");
     private final JButton clientModeButton = new JButton("client mode");
@@ -40,7 +40,7 @@ public class MenuPanel extends JPanel {
         clientModeButton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                super.mouseClicked(e);
+                callback.openClientMode();
             }
         });
 
